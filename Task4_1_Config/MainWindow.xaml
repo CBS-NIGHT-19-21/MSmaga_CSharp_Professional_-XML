@@ -1,0 +1,27 @@
+﻿<Window x:Class="Task4_1_Config.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task4_1_Config"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem x:Name="TextWindow" Header="TextWindow">
+                <Label x:Name="Label1" Content="What is a fractal? In the most generalized terms, a fractal demostrates a limit. Fractals model complex physical processes &#xA;and dynamical systems. The underlying principle of fractals is that a simple process that goes through infinitely many &#xD;&#xA;iterations becomes a very complex process. Fractals attempt to model the complex process by searching for the simple&#xA;process underneath." HorizontalAlignment="Left" Height="359" Margin="7,0,0,0" VerticalAlignment="Top" Width="761"/>
+            </TabItem>
+            <TabItem x:Name="Config" Header="Config">
+                <Grid Background="#FFE5E5E5">
+                    <RadioButton x:Name="RadioButton1" Content="8 px" HorizontalAlignment="Left" Height="22" Margin="30,48,0,0" VerticalAlignment="Top" Width="111"/>
+                    <RadioButton x:Name="RadioButton2" Content="10 px" HorizontalAlignment="Left" Height="23" Margin="30,70,0,0" VerticalAlignment="Top" Width="93"/>
+                    <RadioButton x:Name="RadioButton3" Content="12 px" HorizontalAlignment="Left" Height="25" Margin="30,93,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.524,0.963"/>
+                    <RadioButton x:Name="RadioButton4" Content="14 px" HorizontalAlignment="Left" Height="18" Margin="30,118,0,0" VerticalAlignment="Top" Width="97"/>
+                    <RadioButton x:Name="RadioButton5" Content="16 px" HorizontalAlignment="Left" Height="20" Margin="30,141,0,0" VerticalAlignment="Top" Width="97"/>
+                    <Button x:Name="Button1" Content="Apply" HorizontalAlignment="Left" Height="27" Margin="32,176,0,0" VerticalAlignment="Top" Width="95" Visibility="Visible" Click="Button1_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
